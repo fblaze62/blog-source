@@ -1,5 +1,7 @@
 ## [FeatherBlaze's Blog](https://github.com/fblaze62/blog) Source Code
 
+[Preview](https://blog.fblaze62.top/)
+
 1. Clone the project
 
 ```bash
@@ -20,12 +22,10 @@ npx hexo generate
 npx hexo deploy
 ```
 
-[Preview](https://blog.fblaze62.top/)
-
 4. Deploy
 
-Using GitHub Pages or Cloudflare Pages.
+  Using GitHub Pages or Cloudflare Pages.
 
 5. Configuration
 
-Refer to the [Hexo documentation](https://hexo.io/docs/) and [Volantis theme documentation](https://volantis.js.org/v5/getting-started/).
+  Refer to the [Hexo documentation](https://hexo.io/docs/) and [Volantis theme documentation](https://volantis.js.org/v5/getting-started/).
