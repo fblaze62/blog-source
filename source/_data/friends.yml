@@ -1,0 +1,68 @@
+- group: 自卖自夸
+  description: 自己的网站！
+  items:
+    - title: 飞焰服务器
+      avatar: https://gcore.jsdelivr.net/gh/fblaze62/blog@main/images/fblaze-docs.png
+      url: https://docs.fblaze62.top/
+      description: 我的 Minecraft 服务器，欢迎加入！
+- group: 朋友们
+  description: 我的朋友们！
+  items:
+    - title: 天御千云
+      avatar: https://gcore.jsdelivr.net/gh/fblaze62/blog@main/images/tyqy.png
+      url: https://space.bilibili.com/3546898069719530
+      description: 一个 Minecraft & 三角洲博主，偶尔也弹弹钢琴。
+- group: 特别鸣谢
+  description: 博客使用的项目。还有许多项目未被列出。
+  items:
+    - title: Hexo
+      avatar: https://gcore.jsdelivr.net/gh/fblaze62/blog@main/images/hexo.png
+      url: https://hexo.io/
+      description: 快速、简洁且高效的博客框架。
+    - title: Volantis
+      avatar: https://gcore.jsdelivr.net/gh/fblaze62/blog@main/images/volantis.png
+      url: https://volantis.js.org/
+      description: 一款很棒的 Hexo 主题。
+    - title: GitHub
+      avatar: https://gcore.jsdelivr.net/gh/fblaze62/blog@main/images/github.png
+      url: https://github.com/
+      description: 软件项目托管平台。
+    - title: CloudFlare Pages
+      avatar: https://gcore.jsdelivr.net/gh/fblaze62/blog@main/images/cloudflare.png
+      url: https://www.cloudflare.com/developer-platform/products/pages/
+      description: 使用 Pages 可在更短的时间内构建、部署和交付可信赖的全栈应用。
+- group: 一些网站
+  description: 一些杂七杂八的网站。
+  items:
+    - title: GitHub
+      avatar: https://gcore.jsdelivr.net/gh/fblaze62/blog@main/images/github.png
+      url: https://github.com/
+      description: 软件项目托管平台。
+    - title: CloudFlare
+      avatar: https://gcore.jsdelivr.net/gh/fblaze62/blog@main/images/cloudflare.png
+      url: https://www.cloudflare.com/
+      description: 全球领先的网络安全和性能服务提供商。
+    - title: 哔哩哔哩
+      avatar: https://gcore.jsdelivr.net/gh/fblaze62/blog@main/images/bilibili.png
+      url: https://www.bilibili.com/
+      description: 中国文化社区和视频网站。
+    - title: 抖音
+      avatar: https://gcore.jsdelivr.net/gh/fblaze62/blog@main/images/douyin.png
+      url: https://www.douyin.com/
+      description: 短视频社交平台。
+    - title: 小红书
+      avatar: https://gcore.jsdelivr.net/gh/fblaze62/blog@main/images/xhs.png
+      url: https://www.xiaohongshu.com/
+      description: 你专属的生活兴趣社区！
+    - title: 洛谷
+      avatar: https://gcore.jsdelivr.net/gh/fblaze62/blog@main/images/luogu.png
+      url: https://www.luogu.com.cn/
+      description: 一个专业的在线评测系统。
+    - title: 链滴
+      avatar: https://gcore.jsdelivr.net/gh/fblaze62/blog@main/images/ld.png
+      url: https://ld246.com/
+      description: 记录生活，连接点滴。
+    - title: LittleSkin
+      avatar: https://gcore.jsdelivr.net/gh/fblaze62/blog@main/images/littleskin.png
+      url: https://www.littleskin.com/
+      description: 快速、可靠的 Minecraft 皮肤站。

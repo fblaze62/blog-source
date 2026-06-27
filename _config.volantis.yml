@@ -1,0 +1,468 @@
+# 平滑滚动效果
+scroll_smooth: false
+############################### Navigation Bar ############################### > start
+# 注意事项：建议规范全站路径 URL 最后带一个 "/" 例如 "about/"
+navbar:
+  visiable: auto # always, auto
+  logo: # choose [img] or [icon + title]
+    img:
+    icon:
+    title: FeatherBlaze
+  menu:
+    - name: 博客
+      icon: fa-solid fa-rss
+      url: /
+    - name: 公告
+      icon: fa-solid fa-bullhorn
+      url: announcement/
+    - name: 分类
+      icon: fa-solid fa-folder-open
+      url: categories/
+    - name: 标签
+      icon: fa-solid fa-tags
+      url: tags/
+    - name: 归档
+      icon: fa-solid fa-archive
+      url: archives/
+    - name: 友链
+      icon: fa-solid fa-link
+      url: friends/
+    - name: 关于
+      icon: fa-solid fa-info-circle
+      url: about/
+  search: 搜点什么...   # Search bar placeholder
+############################### Navigation Bar ############################### > end
+
+
+############################### Cover ############################### > start
+cover:
+  height_scheme: full # full, half
+  layout_scheme: search # blank (留白), search (搜索), dock (坞), featured (精选), focus (焦点)
+  display:
+    home: true
+    archive: true
+    others: false # can be written in front-matter 'cover: true'
+  background: https://gcore.jsdelivr.net/gh/MHG-LAB/cron@gh-pages/bing/bing.jpg
+  # background: https://bing.ioliu.cn/v1/rand?w=1920&h=1200
+  logo: # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-Cover@3x.png
+  title: 'FeatherBlaze'
+  subtitle: '达成成就：超越生死！'
+  search: 搜点什么... # search bar placeholder
+  features:
+    - name: 博客
+      icon: fa-solid fa-rss
+      url: /
+    - name: 公告
+      icon: fa-solid fa-bullhorn
+      url: announcement/
+    - name: 分类
+      icon: fa-solid fa-folder-open
+      url: categories/
+    - name: 标签
+      icon: fa-solid fa-tags
+      url: tags/
+    - name: 归档
+      icon: fa-solid fa-archive
+      url: archives/
+    - name: 友链
+      icon: fa-solid fa-link
+      url: friends/
+    - name: 关于
+      icon: fa-solid fa-info-circle
+      url: about/
+############################### Cover ############################### > end
+
+
+############################### Article Layout ############################### > start
+# 文章布局
+article:
+  body:
+    # meta library
+    meta_library:
+      # 默认文章作者（可在 _data/author.yaml 中增加其他作者，并在 front-matter 中设置）
+      # https://volantis.js.org/advanced-settings/#多人协同
+      author:
+        avatar: https://gcore.jsdelivr.net/gh/fblaze62/blog@main/images/avatar.png
+        name: FeatherBlaze
+        url: about/
+      # 文章创建日期
+      date:
+        icon: fa-solid fa-calendar-alt
+        title: '发布于：'
+        format: 'll' # 日期格式 http://momentjs.com/docs/
+      # 文章更新日期
+      updated:
+        icon: fa-solid fa-edit
+        title: '更新于：'
+        format: 'll' # 日期格式 http://momentjs.com/docs/
+      # 文章分类
+      category:
+        icon: fa-solid fa-folder-open
+      # 文章浏览计数
+      counter:
+        icon: fa-solid fa-eye
+        unit: '次浏览'
+      # waline 文章评论数量
+      walinecount:
+        icon: fa-solid fa-comment-dots
+        desc: '条评论' # 条评论
+      # artalk 文章评论数量
+      artalkcount:
+        icon: fa-solid fa-comment-dots
+        desc: '条评论' # 条评论
+      # 文章字数和阅读时长
+      wordcount:
+        icon_wordcount: fa-solid fa-keyboard
+        icon_duration: fa-solid fa-hourglass-half
+      # 文章标签
+      tags:
+        icon: fa-solid fa-hashtag
+      # 分享
+      share:
+        - id: qq
+          img:  volantis-static/media/org.volantis/logo/128/qq.png #  https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png
+        - id: qzone
+          img: volantis-static/media/org.volantis/logo/128/qzone.png #  https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png
+        - id: weibo
+          img: volantis-static/media/org.volantis/logo/128/weibo.png #  https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png
+        - id: # qrcode # 当id为qrcode时需要安装插件  npm i hexo-helper-qrcode
+          img: # volantis-static/media/org.volantis/logo/128/wechat.png #  https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/wechat.png
+        - id: # telegram
+          img: # volantis-static/media/org.volantis/logo/128/telegram.png #  https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/telegram.png
+############################### Article Layout ############################### > end
+
+
+############################### Comments ############################### > start
+comments:
+  title: <i class='fa-solid fa-comments'></i> 评论
+  subtitle:
+  service: giscus
+  # 可选评论系统 #
+
+  # giscus
+  # https://giscus.app
+  # https://github.com/laymonage/giscus
+  giscus:
+    # 以下配置按照 yml 格式增删填写即可
+    repo: fblaze62/blog-comments
+    repo-id: R_kgDOSoMU4A
+    category: Announcements
+    category-id: DIC_kwDOSoMU4M4C93wD
+    mapping: "pathname"
+    reactions-enabled: "1"
+    emit-metadata: "0"
+    lang: "zh-CN"
+    # 以上配置按照 yml 格式增删填写即可
+    theme:
+      light: "light" # https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@master/css/giscus/light.css
+      dark: "dark" # https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@master/css/giscus/dark.css
+
+
+############################### Comments ############################### > end
+
+
+############################### Sidebar ############################### > start
+sidebar:
+  position: right # left right
+  # 主页、分类、归档等独立页面
+  for_page: [blogger, announce, category, tagcloud, lastupdate, webinfo]
+  # layout: docs/post 这类文章页面
+  for_post: [blogger, announce, toc]
+  # 侧边栏组件库
+  widget_library:
+    # ---------------------------------------
+    # Announcement widget
+    announce:
+      class: text
+      display: [desktop, mobile]
+      header:
+        icon: fa-solid fa-bullhorn
+        title: 网站公告
+        url: /announcement/
+      content:
+        - '网站近期优化了字体。<a href="/announcement/">查看详情</a>'
+    # ---------------------------------------
+    # blogger info widget
+    blogger:
+      class: blogger
+      display: [desktop, mobile] # [desktop, mobile]
+      avatar: https://gcore.jsdelivr.net/gh/fblaze62/blog@main/images/avatar_with_blank.png
+      shape: rectangle # circle, rectangle
+      url: /about/
+      title: FeatherBlaze
+      subtitle: 达成成就：超越生死！
+      jinrishici: false # Poetry Today. You can set a string, and it will be displayed when loading fails.
+      social:
+        - icon: fa-solid fa-envelope
+          url: mailto:hi@fblaze62.top
+        - icon: fab fa-github
+          url: https://github.com/fblaze62/
+        - icon: fa-brands fa-qq
+          url: https://qm.qq.com/q/BZygZfIjdu
+        - icon: fa-brands fa-bilibili
+          url: https://space.bilibili.com/3493078679686026
+        - icon: fa-brands fa-tiktok
+          url: https://www.douyin.com/user/MS4wLjABAAAAl5uvfzN213pYEYwH3z0Fg1EW0SXk8-oGHe11MUPSpK_bCYcZoevLky97wDl-siDR
+        - icon: https://gcore.jsdelivr.net/gh/fblaze62/blog@main/images/xhs.png
+          url: https://xhslink.com/m/A2gTxR1Rk4g
+        - icon: https://gcore.jsdelivr.net/gh/fblaze62/blog@main/images/luogu.png
+          url: https://www.luogu.com.cn/user/1656141
+        - icon: https://gcore.jsdelivr.net/gh/fblaze62/blog@main/images/ld.png
+          url: https://ld246.com/member/FeatherBlaze/points
+        - icon: https://gcore.jsdelivr.net/gh/fblaze62/blog@main/images/littleskin.png
+          url: https://littleskin.cn/skinlib?filter=skin&uploader=3503129
+        - icon: fa-brands fa-xbox
+          url: https://docs.fblaze62.top/
+    # ---------------------------------------
+    # toc widget (valid only in articles)
+    toc:
+      class: toc
+      display: [desktop, mobile] # [desktop, mobile]
+      sticky: true
+      header:
+        icon: fa-solid fa-list
+        title: 本文目录
+      list_number: false
+      min_depth: 2
+      max_depth: 5
+    # ---------------------------------------
+    # music
+    music:
+      class: music
+      display: [desktop, mobile] # [desktop, mobile]
+    # ---------------------------------------
+    # category widget
+    category:
+      class: category
+      display: [desktop] # [desktop, mobile]
+      header:
+        icon: fa-solid fa-folder-open
+        title: 文章分类
+        url: /categories/
+    # ---------------------------------------
+    # tagcloud widget
+    tagcloud:
+      class: tagcloud
+      display: [desktop, mobile] # [desktop, mobile]
+      header:
+        icon: fa-solid fa-tags
+        title: 热门标签
+        url: /tags/
+      min_font: 14
+      max_font: 24
+      color: true
+      start_color: '#999'
+      end_color: '#555'
+    # ---------------------------------------
+    # qrcode widget
+    qrcode:
+      class: qrcode
+      display: [desktop, mobile] # [desktop, mobile]
+      height: 64px  # Automatic height if not set
+      images:
+        - volantis-static/media/org.volantis/blog/qrcode/github@volantis.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
+        - volantis-static/media/org.volantis/blog/qrcode/github@volantis.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
+    # ---------------------------------------
+    # webinfo widget
+    webinfo:
+      class: webinfo
+      display: [desktop]
+      header:
+        icon: fa-solid fa-award
+        title: 站点信息
+      type:
+        article:
+          enable: true
+          text: '文章数目：'
+          unit: '篇'
+        runtime:
+          enable: false
+          data: '2020/01/01'    # 填写建站日期
+          text: '已运行时间：'
+          unit: '天'
+        wordcount:
+          enable: false
+          text: '本站总字数：'   # 需要启用 wordcount
+          unit: '字'
+        visitcounter:
+          enable: true
+          siteuv:
+            text: '本站访客数：'
+            unit: '人'
+          sitepv:
+            text: '本站总访问量：'
+            unit: '次'
+        lastupd:
+          enable: true
+          friendlyShow: true    # 更友好的时间显示
+          text: '最后活动时间：'
+          unit: '日'
+    # ---------------------------------------
+    # lastupdate widget
+    lastupdate:
+      class: lastupdate
+      display: [desktop, mobile]
+      header:
+        icon: fa-solid fa-clock WISTERIA
+        title: 最近更新
+############################### Sidebar ############################### > end
+
+
+############################### Site Footer ############################### > start
+site_footer:
+  # layout of footer: [aplayer, social, license, info, copyright]
+  layout: [aplayer, social, license, info, copyright]
+  social:
+    - icon: #fa-solid fa-rss
+      url:
+    # or
+    - img:
+      url:
+    # or
+    - avatar:
+      url:
+  # site source
+  source: https://blog.fblaze62.top/
+  # analytics using busuanzi
+  analytics: >
+    <span>本站总访问量为 <span id='busuanzi_site_pv'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 次</span>
+    <span>访客数为 <span id='busuanzi_site_uv'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 人</span>
+  # site copyright
+  copyright: '[Copyright © since 2026 FeatherBlaze](/)'
+  # You can add your own property here. (Support markdown, for example: br: '<br>')
+  br: '<br>'
+############################### Site Footer ############################### > end
+
+
+############################### Plugins ############################### > start
+plugins:
+  ################ required plugins ################
+  ######## Plugins for Count:
+  # npm i hexo-wordcount
+  wordcount:
+    enable: true
+
+  busuanzi:
+    enable: true
+
+############################### Plugins ############################### > end
+
+
+############################### Search ############################### > start
+# To use hexo search, you need to install the following plugins:
+# npm i hexo-generator-json-content
+search:
+  enable: true
+  service: hexo  # hexo, algolia, meilisearch
+  algolia:
+    searchAsYouType: true # If false, triggers the search only on submit.
+    hitsPerPage: 5 # Set the number of hits per page.
+    placeholder: '搜点什么...' # The placeholder text of the input.
+  meilisearch:
+    placeholder: '搜点什么...'
+    searchKey: ''
+    indexName: ''
+    hostUrl: ''
+
+############################### Search ############################### > end
+
+
+############################### Custom css ############################### > start
+custom_css:
+  cursor:
+    enable: #true
+    text: volantis-static/media/cursor/text.png # https://cdn.jsdelivr.net/gh/inkss/common@1/cursor/text.png
+    pointer: volantis-static/media/cursor/pointer.png # https://cdn.jsdelivr.net/gh/inkss/common@1/cursor/pointer.png
+    default: volantis-static/media/cursor/left_ptr.png # https://cdn.jsdelivr.net/gh/inkss/common@1/cursor/left_ptr.png
+    not-allowed: volantis-static/media/cursor/circle.png # https://cdn.jsdelivr.net/gh/inkss/common@1/cursor/circle.png
+    zoom-out: volantis-static/media/cursor/zoom-out.png # https://cdn.jsdelivr.net/gh/inkss/common@1/cursor/zoom-out.png
+    zoom-in: volantis-static/media/cursor/zoom-in.png # https://cdn.jsdelivr.net/gh/inkss/common@1/cursor/zoom-in.png
+    grab: volantis-static/media/cursor/openhand.png # https://cdn.jsdelivr.net/gh/inkss/common@1/cursor/openhand.png
+  font_smoothing: true # font-smoothing for webkit
+  max_width: 1080px # Sum of body width and sidebar width (This limit will be exceeded when the device width is greater than 2000px, reaching 75% of the total width)
+  scrollbar:
+    size: 4px
+    border: 2px
+  navbar:
+    height: 64px
+    width: auto # auto, max
+    effect: [shadow, floatable, blur] # [shadow, floatable, blur]
+  sidebar:
+    effect: [shadow, floatable, blur] # [shadow, floatable, blur]
+  body:
+    effect: [shadow, floatable, blur] # [shadow, floatable, blur]
+    highlight:
+      language: true # show language of codeblock
+      grayscale: false # Enable grayscale effect
+    text_align: # left, right, justify, center
+      h1: left
+      h2: left
+      h3: left
+      h4: left
+      p: justify
+  gap:
+    h2: 48px # Spacing above H2 (only px unit)
+    h3: 24px # Spacing above H3 (only px unit)
+    h4: 16px # Spacing above H4 (only px unit)
+    p: 1em # Paragraph spacing between paragraphs
+    line_height: 1.6 # normal, 1.5, 1.75, 2 ...
+  border_radius:
+    card: 8px
+    codeblock: 4px
+    searchbar: 8px
+    button: 4px
+  fontsize:
+    root: 16px
+    h1: 1.5rem # 不推荐用在文章中
+    h2: 1.5rem
+    h3: 1.25rem
+    h4: 1.125rem
+    h5: 1rem
+    h6: 1rem
+    list: .9375rem
+    meta: .875rem
+    code: .8125rem
+    footnote: .78125rem
+  fontfamily:
+    logofont:
+      fontfamily: 'Ubuntu, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
+      name: 'Ubuntu'
+      url: https://gcore.jsdelivr.net/gh/fblaze62/fonts/Ubuntu/Ubuntu-Regular.ttf
+      weight: normal
+      style: normal
+    bodyfont:
+      fontfamily: 'MiSans, UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
+      name: 'MiSans'
+      url: https://gcore.jsdelivr.net/gh/fblaze62/fonts/MiSans/subset/gb2312/MiSans-Regular.woff2
+      weight: normal
+      style: normal
+    codefont:
+      fontfamily: '"JetBrains Mono", Menlo, UbuntuMono, Monaco'
+      name: '"JetBrains Mono"'
+      url: https://gcore.jsdelivr.net/gh/fblaze62/fonts/JetBrainsMono/JetBrainsMono-Regular.ttf
+      weight: normal
+      style: normal
+############################### Custom css ############################### > end
+
+
+############################### Color Scheme ############################### > start
+# Accessibility: 背景色和前景色要有足够的对比度 https://web.dev/color-contrast/
+# https://ant.design/docs/spec/colors-cn
+color_scheme:
+  # ------------
+  # 通用颜色
+  common:
+    # 主题色
+    theme: '#ff5e0d'
+    # 链接色
+    link: '#2092ec'
+    # 按钮色
+    button: '#ff5e0d'
+    # 鼠标放到交互元素上时的色
+    hover: '#ff0d0d'
+    # 主题色块内部的文字颜色
+    inner: '#fff'
+    # 选中区域文字的背景颜色
+    selection: 'alpha(#2196f3, 0.2)'
+  # ------------
+############################### Color Scheme ############################### > end
