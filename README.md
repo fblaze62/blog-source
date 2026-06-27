@@ -3,7 +3,7 @@
 1. Clone the project
 
 ```bash
-git clone
+git clone https://github.com/fblaze62/blog-source.git
 ```
 
 2. Install dependencies
