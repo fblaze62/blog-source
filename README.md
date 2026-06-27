@@ -24,8 +24,8 @@ npx hexo deploy
 
 4. Deploy
 
-  Using GitHub Pages or Cloudflare Pages.
+   Using GitHub Pages or Cloudflare Pages.
 
 5. Configuration
 
-  Refer to the [Hexo documentation](https://hexo.io/docs/) and [Volantis theme documentation](https://volantis.js.org/v5/getting-started/).
+   Refer to the [Hexo documentation](https://hexo.io/docs/) and [Volantis theme documentation](https://volantis.js.org/v5/getting-started/).
