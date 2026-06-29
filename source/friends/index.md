@@ -1,6 +1,7 @@
 ---
 layout: friends # 必须
 title: 友情链接 # 可选，这是友链页的标题
+sidebar: [blogger, announce, navigation]
 ---
 
 {% btn center large::开往::https://www.travellings.cn/go.html::fas fa-paper-plane %}
