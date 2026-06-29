@@ -2,8 +2,6 @@
 layout: page
 title: 公告详情
 date: 2026-06-27 16:27:24
-plugins:
-  - snackbar: is_announcement
 ---
 
 网站近期优化了字体，具体改动如下：

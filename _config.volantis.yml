@@ -10,20 +10,23 @@ navbar:
     title: FeatherBlaze
   menu:
     - name: 博客
-      icon: fa-solid fa-rss
+      icon: fa-solid fa-house
       url: /
+    - name: 文章
+      icon: fa-solid fa-pen
+      rows:
+        - name: 分类
+          icon: fa-solid fa-folder-open
+          url: categories/
+        - name: 标签
+          icon: fa-solid fa-tags
+          url: tags/
+        - name: 归档
+          icon: fa-solid fa-archive
+          url: archives/
     - name: 公告
       icon: fa-solid fa-bullhorn
       url: announcement/
-    - name: 分类
-      icon: fa-solid fa-folder-open
-      url: categories/
-    - name: 标签
-      icon: fa-solid fa-tags
-      url: tags/
-    - name: 归档
-      icon: fa-solid fa-archive
-      url: archives/
     - name: 友链
       icon: fa-solid fa-link
       url: friends/
@@ -50,11 +53,8 @@ cover:
   search: 搜点什么... # search bar placeholder
   features:
     - name: 博客
-      icon: fa-solid fa-rss
+      icon: fa-solid fa-house
       url: /
-    - name: 公告
-      icon: fa-solid fa-bullhorn
-      url: announcement/
     - name: 分类
       icon: fa-solid fa-folder-open
       url: categories/
@@ -64,6 +64,9 @@ cover:
     - name: 归档
       icon: fa-solid fa-archive
       url: archives/
+    - name: 公告
+      icon: fa-solid fa-bullhorn
+      url: announcement/
     - name: 友链
       icon: fa-solid fa-link
       url: friends/
@@ -165,9 +168,9 @@ comments:
 sidebar:
   position: right # left right
   # 主页、分类、归档等独立页面
-  for_page: [blogger, announce, category, tagcloud, lastupdate, webinfo]
+  for_page: [blogger, announce, category, navigation, lastupdate, webinfo]
   # layout: docs/post 这类文章页面
-  for_post: [blogger, announce, toc]
+  for_post: [blogger, announce, navigation, toc]
   # 侧边栏组件库
   widget_library:
     # ---------------------------------------
@@ -176,11 +179,39 @@ sidebar:
       class: text
       display: [desktop, mobile]
       header:
-        icon: fa-solid fa-bullhorn
+        icon: fas fa-bullhorn
         title: 网站公告
         url: /announcement/
       content:
         - '网站近期优化了字体。<a href="/announcement/">查看详情</a>'
+    # ---------------------------------------
+    # Navigation widget
+    navigation:
+      class: grid
+      display: [desktop, mobile]
+      header:
+        icon: fas fa-flag
+        title: 站内导航
+      fixed: true # 固定宽度
+      rows:
+        - name: 主页
+          icon: fas fa-house
+          url: /
+        - name: 分类
+          icon: fa-solid fa-folder-open
+          url: categories/
+        - name: 标签
+          icon: fa-solid fa-tags
+          url: tags/
+        - name: 归档
+          icon: fa-solid fa-archive
+          url: archives/
+        - name: 友链
+          icon: fa-solid fa-link
+          url: friends/
+        - name: 关于
+          icon: fa-solid fa-info-circle
+          url: about/
     # ---------------------------------------
     # blogger info widget
     blogger:
@@ -211,7 +242,7 @@ sidebar:
           url: https://ld246.com/member/FeatherBlaze/points
         - icon: https://gcore.jsdelivr.net/gh/fblaze62/blog@main/images/littleskin.png
           url: https://littleskin.cn/skinlib?filter=skin&uploader=3503129
-        - icon: fa-brands fa-xbox
+        - icon: https://gcore.jsdelivr.net/gh/fblaze62/blog@main/images/fblaze-docs.png
           url: https://docs.fblaze62.top/
     # ---------------------------------------
     # toc widget (valid only in articles)
@@ -304,7 +335,7 @@ sidebar:
       display: [desktop, mobile]
       header:
         icon: fa-solid fa-clock WISTERIA
-        title: 最近更新
+        title: 最近发布
 ############################### Sidebar ############################### > end
 
 

@@ -3,6 +3,8 @@ layout: friends # 必须
 title: 友情链接 # 可选，这是友链页的标题
 ---
 
+{% btn center large::开往::https://www.travellings.cn/go.html::fas fa-paper-plane %}
+
 <!-- more -->
 
-如果你想添加你的链接，你可以通过右侧的联系方式联系我，附上名称/图片/链接/描述。
+如果你也想交个朋友，你可以通过右侧的联系方式联系我。
